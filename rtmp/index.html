@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Stream</title>
+  </head>
+  <body>
+    <h2>Live Stream</h2>
+    <video id="video" width="800" controls></video>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+      var video = document.getElementById("video");
+      var videoSrc = "http://localhost:8080/hls/.m3u8";
+      if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+      }
+
+      else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        video.src = videoSrc;
+      }
+    </script>
+  </body>
+</html>
