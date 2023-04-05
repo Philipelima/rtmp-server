@@ -1,0 +1,31 @@
+version: "3"
+services: 
+  postgres:
+    build:
+      context: ./database
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: ${PGDATA}
+    volumes:
+       - streaming_server:/data/postgres-streaming
+    ports:
+      - "5430:5430"
+  rtmp:
+    build:
+      context: ./rtmp
+    ports: 
+      - "1935:1935"
+      - "8080:8080"
+    volumes:
+      - ./data:/tmp/hls
+  auth_service:
+    build:
+      context: ./auth
+    ports: 
+      - "8000:8000"
+  
+volumes:
+    streaming_server:
+      external: false
