@@ -48,4 +48,16 @@ in golang.
 2. **database** - postgres database used to store the access keys. This is where the auth service queries if the supplied key is valid.
 <br>
 
-3. **rtmp** - the rtmp server used to transmit the data.
+3. **rtmp** - the rtmp server used to transmit the data.    
+
+
+
+##### Service ports:
+
+<br>
+
+| Service    | Port         |
+|:----------:|:------------:|
+| auth       |  8000        |
+| database   |  5430        |
+| rtmp       |  1935        |
