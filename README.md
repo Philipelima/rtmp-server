@@ -32,5 +32,6 @@ A RTMP transmission works in three-steps:
     * **The second packet** - sent by the client shortly after, is a timestamp. The server replies with a copy of the two data it has just received.
     * **The final packet**  - When the duplex communication is complete, the client sends a copy of the timestamp again. The server returns the copy. When the last packet is returned from the server, the handshake is successfully completed. 
     <br>
-2. **Connection** - The client and server then negotiate a connection using Action Message Format (AMF) encoded messages
-    >_**AMF**_ - Action Message Format (AMF) is a binary format used to serialize object graphs such as ActionScript objects and XML, or send messages between an Adobe Flash client and a remote service, usually a Flash Media Server or third party alternatives. The Actionscript 3 language provides classes for encoding and decoding from the AMF format. [wikipedia](https://en.wikipedia.org/wiki/Action_Message_Format)
+2. **Connection** - The client and server then negotiate a connection using Action Message Format (AMF) encoded messages.
+    <br>
+3. **Stream** - Having completed the handshake and connection steps, the streaming data can now be delivered.
