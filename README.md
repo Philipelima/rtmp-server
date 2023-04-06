@@ -6,3 +6,7 @@
 ![go](https://img.shields.io/static/v1?label=Golang+1.20&labelColor=08dae1&message=Go&color=000000&logo=go&logoColor=ffffff&style=flat-square)
 
 A simple live video streaming service using nginx, rtmp, hls and golang (for authentication service).
+
+
+# What's RTMP ?
+
