@@ -35,3 +35,6 @@ A RTMP transmission works in three-steps:
 2. **Connection** - The client and server then negotiate a connection using Action Message Format (AMF) encoded messages.
     <br>
 3. **Stream** - Having completed the handshake and connection steps, the streaming data can now be delivered.
+
+
+### How this project works?
