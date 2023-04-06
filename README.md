@@ -16,3 +16,5 @@ Nowadays the RTMP protocol is constantly used by services such as Facebook, Twit
 
 In RTMP the content is delivered in chunks, usually called "chunks", so the user can consume the content without having to wait for the complete download.
 
+
+### How a rtmp transmission works?
