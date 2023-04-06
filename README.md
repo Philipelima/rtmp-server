@@ -41,5 +41,11 @@ A RTMP transmission works in three-steps:
 
 This project was created with Docker and separated into 3 services: 
 
-1. **auth** - the authetication service, which is called by Nginx to validate the access key.  The service has been developed in golang.
+1. **auth** - the authetication service, which is called by Nginx to validate the access key.  The service has been developed 
+in golang.
+<br>
 
+2. **database** - postgres database used to store the access keys. This is where the auth service queries if the supplied key is valid.
+<br>
+
+3. **rtmp** - the rtmp server used to transmit the data.
