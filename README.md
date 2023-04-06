@@ -54,7 +54,6 @@ in golang.
 
 ##### Service ports:
 
-<br>
 
 | Service    | Port         |
 |:----------:|:------------:|
