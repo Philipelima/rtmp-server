@@ -10,3 +10,4 @@ A simple live video streaming service using nginx, rtmp, hls and golang (for aut
 
 ### What's RTMP ?
 
+RTMP (Real-time messaging protocol) is a data transmission technology developed by Macromidia, initially dedicated to transmitting data between streaming servers and the old Adobe Flash Player.
