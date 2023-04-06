@@ -28,7 +28,7 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 ```mermaid 
 
     graph TD;
-        R[Video Source]-->e[Encoder]-->S[RMTP Server];
-        S-->C[Client];
+        R([Video Source])-->e([Encoder])-->S([RMTP Server]);
+        S-->C([Client]);
       
 ```
