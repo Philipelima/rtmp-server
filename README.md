@@ -25,10 +25,8 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 
 <br>
 
-```mermaid 
+A RTMP transmission works in three-steps:
 
-    graph TD;
-        R([Video Source])-->e([Encoder])-->S([RMTP Server]);
-        S-->C([Client]);
-      
-```
+1. **Handshake** - The client, which can be an encoder software or hardware, that wants to transmit data initiates a connection by exchanging 3 packets. 
+    * The first packet sent by the client is the RTMP version that is being streamed. 
+    * The second, sent by the client shortly after, is a timestamp. The server replies with a copy of the two data it has just received.
