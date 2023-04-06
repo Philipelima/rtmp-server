@@ -60,3 +60,24 @@ in golang.
 | auth       |  8000        |
 | database   |  5430        |
 | rtmp       |  1935        |
+
+
+#### How you can run this project on your pc:
+
+Clone this repository:
+
+```bash
+    git clone https://github.com/Philipelima/rtmp-server.git
+```
+
+On the project directory, run: 
+
+```bash
+     docker-compose build
+```
+
+and after: 
+
+```bash
+     docker-compose up
+```
