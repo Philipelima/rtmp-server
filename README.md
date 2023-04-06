@@ -8,5 +8,5 @@
 A simple live video streaming service using nginx, rtmp, hls and golang (for authentication service).
 
 
-# What's RTMP ?
+## What's RTMP ?
 
