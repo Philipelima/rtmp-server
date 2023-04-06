@@ -24,3 +24,8 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 ### How a RTMP transmission works?
 
 <br>
+
+```marmeid 
+
+    r[recorder]-->s[rtmp server]-->c[client(hls)];
+```
