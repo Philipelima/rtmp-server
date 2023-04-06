@@ -28,6 +28,7 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 ```mermaid 
 
     graph TD;
-        Recorder-->Server-->Client;
+        R[Font]-->e[Encoder]-->S[RMTP Server];
+        S-->C[Client - HLS];
       
 ```
