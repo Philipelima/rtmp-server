@@ -21,6 +21,6 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 
 <br>
 
-### How a rtmp transmission works?
+### How a RTMP transmission works?
 
 <br>
