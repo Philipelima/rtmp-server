@@ -29,6 +29,6 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 
     graph TD;
         R[Video Source]-->e[Encoder]-->S[RMTP Server];
-        S-->C[Client - HLS];
+        S-->C[Client];
       
 ```
