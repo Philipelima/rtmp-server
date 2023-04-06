@@ -25,7 +25,7 @@ In RTMP the content is delivered in chunks, usually called "chunks", so the user
 
 <br>
 
-```marmeid 
+```mermaid 
 
     r[recorder]-->s[rtmp server]-->c[client(hls)];
 ```
