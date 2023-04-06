@@ -7,8 +7,11 @@
 
 A simple live video streaming service using nginx, rtmp, hls and golang (for authentication service).
 
+<br>
 
 ### What's RTMP ?
+
+<br>
 
 RTMP (Real-time messaging protocol) is a data transmission technology developed by Macromidia, initially dedicated to transmitting data between streaming servers and the old Adobe Flash Player.
 
@@ -16,5 +19,8 @@ Nowadays the RTMP protocol is constantly used by services such as Facebook, Twit
 
 In RTMP the content is delivered in chunks, usually called "chunks", so the user can consume the content without having to wait for the complete download.
 
+<br>
 
 ### How a rtmp transmission works?
+
+<br>
