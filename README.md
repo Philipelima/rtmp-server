@@ -38,3 +38,8 @@ A RTMP transmission works in three-steps:
 
 
 ### How this project works?
+
+This project was created with Docker and separated into 3 systems. 
+
+1. **auth** - the authetication service, which is called by Nginx to validate the access key.  The service has been developed in golang.
+
